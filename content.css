@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ba9e8c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .scrapbook {
+    width: 720px;
+    height: 1200px;
+    overflow: hidden;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .page:not(:first-child) {
+    transform: translateX(100%);
+  }
+  
+  .image-container {
+    width: 700px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-container {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .text-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 25px;
+    color: #000000;
+    text-justify: inter-word;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    padding: 10px;
+  }
+  
+  .text-container1 {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .text-container1 h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .text-container1 p {
+    font-size: 25px;
+    color: #000000;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    padding: 10px;
+  }
+  .navigation {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  

@@ -1,0 +1,107 @@
+/* Styling dasar halaman */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kontainer utama */
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Latar belakang kotak putih */
+.background {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 330px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pusatkan konten di dalam kotak */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Gaya teks atas */
+.text-top h1 {
+    font-size: 24px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+/* Gaya gambar surat (GIF) */
+.gif {
+    width: 150px;
+    height: auto;
+    margin-bottom: -30px;
+}
+
+/* Gaya teks bawah */
+.text-bottom p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Grid tugas */
+.task-grid {
+    display: flex;
+    justify-content: center;
+}
+
+/* Kartu tugas */
+.task-card {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+/* Hover effect pada kartu */
+.task-card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Media query untuk layar lebih besar */
+@media screen and (min-width: 725px) {
+    .background {
+        width: 500px;
+        height: 500px;
+    }
+
+    .text-top h1 {
+        font-size: 28px;
+    }
+
+    .gif {
+        width: 200px;
+    }
+
+    .text-bottom p {
+        font-size: 20px;
+    }
+}
